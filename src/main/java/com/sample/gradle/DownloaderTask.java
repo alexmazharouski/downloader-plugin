@@ -1,4 +1,4 @@
-package ru.clevertec;
+package com.sample.gradle;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
@@ -6,7 +6,6 @@ import org.gradle.api.tasks.TaskExecutionException;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;

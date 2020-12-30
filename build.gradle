@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
     id 'com.gradle.plugin-publish' version '0.12.0'
 }
-group 'ru.clevertec'
+group 'com.sample.gradle'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -15,22 +15,24 @@ repositories {
 gradlePlugin {
     plugins {
         downloader {
-            id = 'ru.clevertec.downloader'
-            implementationClass = 'ru.clevertec.Downloader'
+            id = 'com.sample.gradle'
+            displayName = 'Downloader'
+            description = 'Download files'
+            implementationClass = 'com.sample.gradle.Downloader'
         }
     }
 }
 
 pluginBundle {
-    website = 'https://github.com/ysb33r/gradleTest'
-    vcsUrl = 'https://github.com/ysb33r/gradleTest.git'
-    tags = ['testing', 'integrationTesting', 'compatibility']
+    website = 'https://github.com/alexmazharouski/downloader-plugin'
+    vcsUrl = 'https://github.com/alexmazharouski/downloader-plugin.git'
+    tags = ['download', 'template']
 }
 
 publishing {
     publications {
         plugin(MavenPublication) {
-            groupId = 'ru.clevertec.downloader'
+            groupId = 'com.sample.gradle'
             artifactId = 'Downloader'
             version = '1.0'
         }
