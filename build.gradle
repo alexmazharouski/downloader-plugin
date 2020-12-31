@@ -31,10 +31,8 @@ pluginBundle {
 
 publishing {
     publications {
-        plugin(MavenPublication) {
-            groupId = 'com.sample.gradle'
-            artifactId = 'Downloader'
-            version = '1.0'
+        mavenJava(MavenPublication) {
+            from components.java
         }
     }
 }

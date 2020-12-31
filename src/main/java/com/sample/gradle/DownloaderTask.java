@@ -18,8 +18,10 @@ public class DownloaderTask extends DefaultTask {
         try {
             URL filePath = new URL(extension.getPdfTemplate());
             ReadableByteChannel rbc = Channels.newChannel(filePath.openStream());
-            FileOutputStream fileOutputStream = new FileOutputStream(extension.getFilePath());
+            FileOutputStream fileOutputStream = new FileOutputStream(extension.getSource());
             fileOutputStream.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+            fileOutputStream.close();
+            rbc.close();
         } catch (IOException e) {
             System.err.println();
         }

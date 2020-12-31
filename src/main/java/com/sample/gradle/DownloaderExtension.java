@@ -8,10 +8,6 @@ public class DownloaderExtension {
         return pdfTemplate;
     }
 
-    public void setPdfTemplate(String pdfTemplate) {
-        this.pdfTemplate = pdfTemplate;
-    }
-
     public String getSource() {
         return source;
     }
