@@ -1,4 +1,4 @@
-package com.sample.gradle;
+package com.github.alexmazharouski;
 
 public class DownloaderExtension {
     private String pdfTemplate = "https://github.com/stebadmitriy/files/raw/main/Clevertec_Template.pdf";

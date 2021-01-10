@@ -1,4 +1,4 @@
-package com.sample.gradle;
+package com.github.alexmazharouski;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;

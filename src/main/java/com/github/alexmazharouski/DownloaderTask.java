@@ -1,4 +1,4 @@
-package com.sample.gradle;
+package com.github.alexmazharouski;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
